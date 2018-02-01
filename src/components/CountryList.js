@@ -4,7 +4,6 @@ class CountryList extends React.Component{
 
     render(){
         const countryList = this.props.countryList;
-        console.log("country list here ", countryList);
         return (
             <select onChange={this.props.onChange} defaultValue="defaultOption">
                 <option disabled value="defaultOption">---Select a country---</option>
@@ -12,7 +11,8 @@ class CountryList extends React.Component{
                     return (
                         <option key={country.name}>
                             {country.name}
-                        </option>);
+                        </option>
+                    );
                 })}
             </select>
         );

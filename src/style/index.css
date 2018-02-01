@@ -43,8 +43,8 @@ select{
 }
 
 .leaflet-container{
-    width: 540px;
-    height: 500px;
+    width: 960px;
+    height: 540px;
     margin: 0 auto;
 }
 

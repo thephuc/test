@@ -6,10 +6,6 @@ class UserList extends React.Component{
         const userList          = this.props.userList;
         const selectedCountry   = this.props.selectedCountry;
         const totalCount        = this.props.totalCount;
-        const topSize           = 10;
-        const topUserList       = userList.slice(0, topSize);
-        //console.log("top " + topSize + " users ", topUserList);
-
 
         return (
             <div className="github-info">
@@ -18,11 +14,11 @@ class UserList extends React.Component{
                     <p># of GitHub users in {selectedCountry}: {totalCount}</p>
                 }
                 {
-                    topUserList.length > 0 &&
-                    <p>Top {topUserList.length} most followed user(s)</p>
+                    userList.length > 0 &&
+                    <p>Top {userList.length} most followed user(s)</p>
                 }
                 <div className="user-list">
-                    {topUserList.map(function (user, idx) {
+                    {userList.map(function (user, idx) {
                         return (
                             <div className="user-info" key={idx}>
                             <span key={user.id}>
