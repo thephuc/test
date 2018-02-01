@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+select{
+  height: 30px;
+  font-size: 18px;
+  margin: 20px auto;
+}
+
+.github-info p{
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.user-list{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.user-info{
+    width: 60px;
+    height: 70px;
+    display: inline-block;
+    /*margin: 5px;*/
+}
+
+.user-info .user-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#mapComponent{
+    width: 1024px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+.leaflet-container{
+    width: 540px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.leaflet-popup-content{
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.loading-gif{
+    background: center url("../images/loading.gif") no-repeat;
+}
