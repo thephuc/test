@@ -15,11 +15,11 @@ const Utility = {
 //  helper function to validate response from API call and call errorHandler if necessary
     validateResponse: function (response) {
         if(response && response.status >= 200 && response.status < 300){
-            console.log(response);
+            //console.log(response);
 
             return response.json()
                 .then(function (data) {
-                    console.log("converted response to json");
+                    //console.log("converted response to json");
                     return data;
             })
                 .catch(function(error){

@@ -31,7 +31,7 @@ class MapComponent extends React.Component{
             </Marker>);
         }
 
-        console.log("rendering map");
+        //console.log("rendering map");
         return (
             <Map
                 width={window.innerWidth}

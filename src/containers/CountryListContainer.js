@@ -62,7 +62,7 @@ class CountryListContainer extends React.Component{
     //  render CountryList component only if the list of country is not empty
     render(){
         if(this.state.isCountryListLoaded && this.props.countryList && this.props.countryList.length > 0){
-            console.log("countryList.json container rendering ");
+            //console.log("countryList.json container rendering ");
             return (
                 <CountryList
                     //key={this.props.countryList.length}

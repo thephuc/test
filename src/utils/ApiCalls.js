@@ -34,7 +34,7 @@ const APICalls = {
         let getGitHubUserInCountryUrl = "https://api.github.com/search/users?q=location:" + countryName;
         getGitHubUserInCountryUrl = Utility.appendConditionsToUrl(getGitHubUserInCountryUrl, conditionObj);
 
-        console.log("API url to get github user list", getGitHubUserInCountryUrl);
+        //console.log("API url to get github user list", getGitHubUserInCountryUrl);
         return fetch(getGitHubUserInCountryUrl)
             .then(Utility.validateResponse)
             .catch(error => {
