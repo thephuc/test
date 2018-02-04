@@ -23,7 +23,7 @@ class UserList extends React.Component{
                             <div className="user-info" key={idx}>
                             <span key={user.id}>
                                 <a href={user.html_url} target="_blank">
-                                    <img className="user-avatar" src={user.avatar_url}/>
+                                    <img alt="user picture" className="user-avatar" src={user.avatar_url}/>
                                 </a>
                             </span>
                             </div>
