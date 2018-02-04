@@ -14,7 +14,7 @@ class App extends Component {
             _countryList     : [],
             _totalUserCount  : 0,
             _latLng          : [],
-            _zoom            : 1
+            _zoomLevel       : 1
         };
 
         this.handleSelectedCountry  = this.handleSelectedCountry.bind(this);
@@ -34,7 +34,6 @@ class App extends Component {
     updateUserList(data){
         const userList      = data && data.items ? data.items : [];
         const totalCount    = data && data.total_count ? data.total_count : 0;
-        console.log("app updating user list ", totalCount);
         this.setState({
             _userList: userList,
             _totalUserCount: totalCount
@@ -48,6 +47,12 @@ class App extends Component {
     }
 
     render() {
+
+        let errorDiv = null;
+        if(this.state._selectedCountry && this.state._latLng.length <= 0){
+            errorDiv = <div className="error-message">The country you selected does not have a specific location. Please select another one.</div>;
+        }
+
         return (
             <div className="App">
                 <div className="country-list-select">
@@ -58,15 +63,17 @@ class App extends Component {
                         />
                 </div>
 
+                {errorDiv}
+
                 <div className="map-component" id="mapComponent">
                     <MapContainer
                         latLng={this.state._latLng}
-                        zoom={this.state._zoom}
+                        zoomLevel={this.state._zoomLevel}
                         selectedCountry={this.state._selectedCountry}
                         userList={this.state._userList}
                         totalCount={this.state._totalUserCount}
                         onUserListFetched={this.updateUserList}
-                    />
+                        />
                 </div>
             </div>
         );

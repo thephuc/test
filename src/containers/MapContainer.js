@@ -4,14 +4,20 @@ import MapComponent from "../components/MapComponent.js";
 class MapContainer extends React.Component{
 
     render(){
+        const selectedCountry   = this.props.selectedCountry;
+        const userList          = this.props.userList;
+        const totalCount        = this.props.totalCount;
+        const latLng            = this.props.latLng;
+        const zoomLevel         = this.props.zoomLevel;
+
         return (
             <MapComponent
-                latLng={this.props.latLng}
-                zoom={this.props.zoom}
-                selectedCountry={this.props.selectedCountry}
+                latLng={latLng}
+                zoomLevel={zoomLevel}
+                selectedCountry={selectedCountry}
                 onUserListFetched={this.props.onUserListFetched}
-                userList={this.props.userList}
-                totalCount={this.props.totalCount}
+                userList={userList}
+                totalCount={totalCount}
             />
         );
     }

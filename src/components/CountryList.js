@@ -9,7 +9,7 @@ class CountryList extends React.Component{
                 <option disabled value="defaultOption">---Select a country---</option>
                 {countryList.map(function(country, i){
                     return (
-                        <option key={country.name}>
+                        <option key={i}>
                             {country.name}
                         </option>
                     );

@@ -11,6 +11,15 @@ select{
   margin: 20px auto;
 }
 
+.error-message{
+    /*width: 300px;*/
+    height: 20px;
+    font-size: 18px;
+    margin: 10px auto;
+    color: darkred;
+    text-align: center;
+}
+
 .github-info p{
     font-size: 18px;
     margin: 20px auto;
@@ -52,8 +61,4 @@ select{
     width: 300px;
     height: 300px;
     overflow-y: scroll;
-}
-
-.loading-gif{
-    background: center url("../images/loading.gif") no-repeat;
 }
