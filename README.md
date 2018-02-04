@@ -6,7 +6,7 @@ By: Dao The Phuc
 * To build: run "npm install"
 * To run: "npm start"
 * App is hosted at "localhost:3000"
-
+* Best suited for the latest version of Chrome and Firefox
 
 
 2. Technology used
