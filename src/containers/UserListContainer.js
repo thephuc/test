@@ -1,7 +1,7 @@
 /**
  * Created by thephuc on 31/1/18.
  */
-import APICalls from "../utils/Api.js";
+import APICalls from "../utils/ApiCalls.js";
 import React from "react";
 import UserList from "../components/UserList.js";
 

@@ -1,4 +1,4 @@
-import APICalls from "../utils/Api.js";
+import APICalls from "../utils/ApiCalls.js";
 import LocalLoad from "../utils/LocalLoad.js";
 import React from "react";
 import CountryList from "../components/CountryList.js";

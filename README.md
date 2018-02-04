@@ -2,9 +2,9 @@ Home assignment for Yojee's Front-end Developer technical test
 By: Dao The Phuc
 
 1. Installation and Run
-* Please run the following commands in console to start the project
-npm install
-npm start
+* To build: run "npm install"
+* To run: "npm start"
+* App is hosted at "localhost:3000"
 
 2. Technology used
 * This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
@@ -17,7 +17,7 @@ npm start
  data fetching and processing before rendering its corresponding component. (The "MapComponent" is named as such to avoid
  conflict with react-leaflet's component called "Map").
 
-* The "utils" folder contains an "Api.js" file to handle external API calls, a "LocalLoad.js" file to handle loading data
+* The "utils" folder contains an "ApiCalls.js" file to handle external API calls, a "LocalLoad.js" file to handle loading data
 from local file, and a "Utility.js" that contains utility functions used across the page.
 
 
