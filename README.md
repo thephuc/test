@@ -1,4 +1,5 @@
 Home assignment for Yojee's Front-end Developer technical test
+
 By: Dao The Phuc
 
 1. Installation and Run
@@ -6,10 +7,13 @@ By: Dao The Phuc
 * To run: "npm start"
 * App is hosted at "localhost:3000"
 
+
+
 2. Technology used
 * This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 * react-leaflet for the Map components
+
 
 
 3. Project structure
@@ -19,7 +23,6 @@ By: Dao The Phuc
 
 * The "utils" folder contains an "ApiCalls.js" file to handle external API calls, a "LocalLoad.js" file to handle loading data
 from local file, and a "Utility.js" that contains utility functions used across the page.
-
 
 * Component Hierarchy
   - App
@@ -32,6 +35,8 @@ from local file, and a "Utility.js" that contains utility functions used across 
 callbacks.
   - The UserListContainer and CountryListContainer have their own extra state for error handling to prevent failure in a
 single component from crashing the entire page.
+
+
 
 4. Other notes
 * The CountryListContainer tries to load the list of all countries with their latitude and longitude using an external API.
@@ -46,4 +51,4 @@ One special case, the "United States Minor Outlying Islands", has no specific la
 error message is displayed for this case.
 
 
-----------End of document----------------
+-----------End of User Guide-------------
